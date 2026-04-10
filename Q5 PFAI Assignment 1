@@ -1,0 +1,5 @@
+def rotate_right(lst, k):
+    return lst[-k:] + lst[:-k]
+lst = list(map(int, input("Enter numbers: ").split()))
+k = int(input("Enter k: "))
+print(rotate_right(lst, k))
