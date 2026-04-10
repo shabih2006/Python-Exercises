@@ -1,0 +1,10 @@
+def manual_iter(lst):
+    it = iter(lst)
+    while True:
+        try:
+            print(next(it))
+        except StopIteration:
+            print("End")
+            break
+lst = list(map(int, input("Enter numbers: ").split()))
+manual_iter(lst)
