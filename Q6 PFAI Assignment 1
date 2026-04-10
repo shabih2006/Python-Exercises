@@ -1,0 +1,6 @@
+def make_dict(list1, list2):
+    result = dict(zip(list1, list2))
+    return result
+list1 = input("Enter keys: ").split()
+list2 = input("Enter values: ").split()
+print(make_dict(list1, list2))
