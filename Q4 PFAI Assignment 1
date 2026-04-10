@@ -1,0 +1,11 @@
+def find_odd_indices(lst):
+    indices = []
+    for i, num in enumerate(lst):
+        if num % 2 != 0:
+            indices.append(i)
+    return indices
+lst = []
+values = input("Enter numbers: ").split()
+for x in values:
+    lst.append(int(x))
+print(find_odd_indices(lst))
